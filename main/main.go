@@ -23,7 +23,7 @@ func main() {
 	err = exporter.Exportjson(facebook.Fb, "fbdata.json")
 	check(err)
 
-	err = exporter.Exportxml(facebook.FbData,"fb_data.xml")
+	err = exporter.Exportxml(facebook.Fb,"fb_data.xml")
 	check(err)
 
 	err = exporter.Exporttxt(twitter.Tweet, "tweet_data.txt")

@@ -1,26 +1,17 @@
  <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
-   <URL></URL>
-   <omitempty></omitempty>
-   <Friends>0</Friends>
- </Data>
-
- <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
-   <URL></URL>
-   <Friends>0</Friends>
- </Data>
-
- <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
-   <Friends>0</Friends>
- </Data>
-
- <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
+   <Url>fb/lucky_dube</Url>
    <Friends>3629</Friends>
  </Data>
+
+ <Facebook>
+   <Url>fb/Abgero</Url>
+   <Name>Segun Elohor</Name>
+   <Friends>567</Friends>
+ </Facebook>
+
+ <Facebook>
+   <Url>fb/Abgero_dube</Url>
+   <Name>Segun Elohor</Name>
+   <Friends>567</Friends>
+ </Facebook>
 

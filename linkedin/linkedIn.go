@@ -28,7 +28,7 @@ type Data struct {
 
 //LinkedData is  mock LinkedIn data 
 var LinkedData *Data = &Data{
-	Url: "twitter.com/kal_drogo",
+	Url: "linkedin.com/kal_drogo",
 	User: "Emeka Ola",
 	Connections: 3629,
 }
