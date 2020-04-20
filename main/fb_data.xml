@@ -1,32 +1,26 @@
-{"User":"Emeka Ola","Url":"twitter.com/kal_drogo","Connections":3629,"Name":""}
  <Data Name="Emeka Ola">
    <Url>twitter.com/kal_drogo</Url>
    <Connections>3629</Connections>
-   <Name></Name>
+   <URL></URL>
+   <omitempty></omitempty>
+   <Friends>0</Friends>
  </Data>
 
  <Data Name="Emeka Ola">
    <Url>twitter.com/kal_drogo</Url>
    <Connections>3629</Connections>
+   <URL></URL>
+   <Friends>0</Friends>
  </Data>
 
  <Data Name="Emeka Ola">
    <Url>twitter.com/kal_drogo</Url>
    <Connections>3629</Connections>
+   <Friends>0</Friends>
  </Data>
 
  <Data Name="Emeka Ola">
    <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
- </Data>
-
- <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
- </Data>
-
- <Data Name="Emeka Ola">
-   <Url>twitter.com/kal_drogo</Url>
-   <Connections>3629</Connections>
+   <Friends>3629</Friends>
  </Data>
 

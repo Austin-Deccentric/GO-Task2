@@ -3,15 +3,32 @@ package facebook
 
 //Facebook is a mock type containing basic Info to fufill this learning stage
 type Facebook struct {
-	URL string
-	Name string
+	Url string
+	Name string	`xml:"Name,omitempty"`
 	Friends int
 }
 
 //Fb is an instance of the Facebook struct
 var Fb  *Facebook  = &Facebook{
-	Name: "Segun Elohor",
+	Url: "fb/Abgero",
+	Name: "Segun Elohor", 
 	Friends: 567,
+}
+
+//Data defines the social media plaform Facebook
+type Data struct {
+	//XMLNAME xml.Name `xml:"info"`
+	User string		`xml:"Name,attr"`
+	Url string		`xml:"Url"`
+	Friends int	`xml:"Friends"`
+	Facebook			
+}
+
+//FbData is  mock Facebook data 
+var FbData *Data = &Data{
+	Url: "twitter.com/kal_drogo",
+	User: "Emeka Ola",
+	Friends: 3629,
 }
  
 

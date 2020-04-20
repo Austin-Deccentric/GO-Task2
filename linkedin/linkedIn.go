@@ -17,7 +17,7 @@ var Linked *LinkedIn = &LinkedIn{
 }
 
 
-//Data defines the social media plaform Twitter
+//Data defines the social media plaform LinkedIn
 type Data struct {
 	//XMLNAME xml.Name `xml:"info"`
 	User string		`xml:"Name,attr"`
@@ -26,7 +26,7 @@ type Data struct {
 	LinkedIn			
 }
 
-//LinkedData is  mock twitter data 
+//LinkedData is  mock LinkedIn data 
 var LinkedData *Data = &Data{
 	Url: "twitter.com/kal_drogo",
 	User: "Emeka Ola",
