@@ -41,5 +41,8 @@ func main() {
 	err = exporter.Exportjson(linkedin.Linked,"LinkedIn_data.json")
 	check(err)
 
+	err = exporter.Exportxml(linkedin.LinkedData,"LinkedIn_data.xml")
+	check(err)
+
 }
 

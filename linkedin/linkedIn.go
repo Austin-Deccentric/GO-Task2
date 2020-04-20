@@ -4,7 +4,7 @@ package linkedin
 //LinkedIn defines the social media platform LinkedIn
 type LinkedIn struct {
 	Url string
-	Name string
+	Name string	`xml:"name,omitempty"`
 	Connections int
 }
 
@@ -15,6 +15,24 @@ var Linked *LinkedIn = &LinkedIn{
 	Name: "Chukwu Austin",
 	Connections: 78,
 }
+
+
+//Data defines the social media plaform Twitter
+type Data struct {
+	//XMLNAME xml.Name `xml:"info"`
+	User string		`xml:"Name,attr"`
+	Url string		`xml:"Url"`
+	Connections int	`xml:"Connections"`
+	LinkedIn			
+}
+
+//LinkedData is  mock twitter data 
+var LinkedData *Data = &Data{
+	Url: "twitter.com/kal_drogo",
+	User: "Emeka Ola",
+	Connections: 3629,
+}
+
 
 // Feed returns the latest LinkedIn posts
 func (l *LinkedIn) Feed() []string {
