@@ -8,6 +8,14 @@ type LinkedIn struct {
 	Connections int
 }
 
+
+//Linked is an instance of LinkedIn struct
+var Linked *LinkedIn = &LinkedIn{
+	Url:  "linkedin/Austin-Deccentric",
+	Name: "Chukwu Austin",
+	Connections: 78,
+}
+
 // Feed returns the latest LinkedIn posts
 func (l *LinkedIn) Feed() []string {
 	return []string{
@@ -20,4 +28,13 @@ func (l *LinkedIn) Feed() []string {
 // Fame tells how famous a user is. It is proprtional to the number of friends
 func (l *LinkedIn) Fame() int {
 	return l.Connections
+}
+
+//Response implements a mock json data response
+func (l *LinkedIn) Response() map[string]interface{} {
+	response := make(map[string]interface{})
+	response["Name"] = "Sean Micheals"
+	response["Number of Friends"] = 5000
+	response["Number of followers"] = 2715
+	return response
 }

@@ -8,6 +8,13 @@ type Twitter struct {
 	Followers int
 }
 
+//Tweet is an instance of the Twitter struct
+var Tweet  *Twitter = &Twitter{
+	Url: "twitter.com/kal_drogo",
+	Name: "Emeka Olusegun",
+	Followers: 3629,
+}
+
 // Feed returns the latest Twitter posts
 func (t *Twitter) Feed() []string {
 	return []string{

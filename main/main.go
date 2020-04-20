@@ -3,28 +3,37 @@ package main
 import (
 	"sme/exporter"
 	"sme/facebook"
+	"sme/linkedin"
 	"sme/twitter"
 )
 
-
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
 func main() {
-	fb := new(facebook.Facebook)
-	fb = &facebook.Facebook{
-		Name: "Segun Elohor",
-		Friends: 567,
-	}
-	tweet := new(twitter.Twitter)
-	// // linked := new(linkedin.LinkedIn)
-	err := exporter.Exporttxt(fb,"fb_data.txt")
-	err = exporter.Exporttxt(tweet, "tweet_data.txt")
-	err = exporter.Exportjson(fb, "fbdata.json")
-	if err != nil {
-		panic(err)
-	}
-	err = exporter.Exportresponse(tweet, "twitter_response.json")
-	if err != nil {
-		panic((err))
-	}
+
+	err := exporter.Exporttxt(facebook.Fb,"fb_data.txt")
+	check(err)
+
+	err = exporter.Exporttxt(twitter.Tweet, "tweet_data.txt")
+	check(err)
+
+	err = exporter.Exportjson(facebook.Fb, "fbdata.json")
+	check(err)
+
+	err = exporter.Exportjson(twitter.Tweet,"twitter_data.json")
+	check(err)
+
+	err = exporter.Exportresponse(twitter.Tweet, "twitter_response.json")
+	check(err)
+
+	err = exporter.Exporttxt(linkedin.Linked, "LinkedIn_data.txt")
+	check(err)
+
+	err = exporter.Exportjson(linkedin.Linked,"LinkedIn_data.json")
+	check(err)
 
 }
 

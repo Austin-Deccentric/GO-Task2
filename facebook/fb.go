@@ -8,6 +8,13 @@ type Facebook struct {
 	Friends int
 }
 
+//Fb is an instance of the Facebook struct
+var Fb  *Facebook  = &Facebook{
+	Name: "Segun Elohor",
+	Friends: 567,
+}
+ 
+
 // Feed returns the latest Facebook posts
 func (f *Facebook) Feed() []string {
 	return []string{
@@ -25,9 +32,9 @@ func (f *Facebook) Fame() int {
 //Response is a mock server response
 func (f *Facebook) Response() map[string]interface{} {
 	response := make(map[string]interface{})
-	response["Handle"] = "@kal_Drogo"
-	response["Number of followers"] = 3289
-	response["Number of following"] = 2715
+	response["Name"] = "Sean Micheals"
+	response["Number of Friends"] = 5000
+	response["Number of followers"] = 2715
 	return response
 }
 
