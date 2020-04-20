@@ -1,10 +1,14 @@
 package twitter
 
+import(
+//"encoding/xml"
+)
+
 
 //Twitter defines the social media platform Twitter
 type Twitter struct {
 	Url string
-	Name string
+	Name string `xml:"name,omitempty"`
 	Followers int
 }
 
@@ -12,6 +16,22 @@ type Twitter struct {
 var Tweet  *Twitter = &Twitter{
 	Url: "twitter.com/kal_drogo",
 	Name: "Emeka Olusegun",
+	Followers: 3629,
+}
+
+//Data defines the social media plaform Twitter
+type Data struct {
+	//XMLNAME xml.Name `xml:"info"`
+	User string		`xml:"Name,attr"`
+	Url string		`xml:"Url"`
+	Followers int	`xml:"Followers"`
+	Twitter			
+}
+
+//TweetData is  mock twitter data 
+var TweetData *Data = &Data{
+	Url: "twitter.com/kal_drogo",
+	User: "Emeka Ola",
 	Followers: 3629,
 }
 
